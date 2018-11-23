@@ -73,10 +73,9 @@ public class Department {
             //step3 create the statement object
             Statement stmt = con.createStatement();
             //step4 execute query
-            String query = "select M.employee_id, M.first_name, M.last_name, E.manager_id "
-                    +"from employees E"
-                    +"join employees M on E.manager_id = M.employee_id"
-                    + "where E.department_id = " + getDeparment_ID();
+            String query = "select M.employee_id, M.first_name, M.last_name, E.manager_id from employees E"
+                    +" "+"join employees M on E.manager_id = M.employee_id"
+                    +" "+ "where E.department_id = " + getDeparment_ID();
             ResultSet rs = stmt.executeQuery(query);
             while (rs.next()) {
 //                System.out.println(rs.getString(1) + "  " + rs.getString(2));

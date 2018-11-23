@@ -32,8 +32,8 @@ public class TestDepartment2 {
             System.out.println(dept.getManager().get(i).toString());
         }
         System.out.println("Manager 1 = "+dept1.getManager());
-        for (int i = 0; i < dept.getManager().size(); i++) {
-            System.out.println(dept.getManager().get(i).toString());
+        for (int i = 0; i < dept1.getManager().size(); i++) {
+            System.out.println(dept1.getManager().get(i).toString());
         }
     }
   
